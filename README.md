@@ -11,6 +11,6 @@ this is a sunrgbd toolbox modified based on the official toolbox can
 
 #next goal:
 
-1.find an elegant way to store the global variables
-2.refactoring the whole project
-3.divide into more modules
+1.find an elegant way to store the global variables  
+2.refactoring the whole project  
+3.divide into more modules  
