@@ -36,7 +36,8 @@ function write_results(Hin_structs)
             %copy and write file
             if ~exist(des_rgb_path, 'dir')
                 disp('rgb_noseg dir doesnt exists!');
-                return;
+                fprintf('make dir %s', des_rgb_path);
+                mkdir(des_rgb_path);
             end
 
             %crop obj from image
@@ -49,7 +50,8 @@ function write_results(Hin_structs)
 
             if ~exist(des_depth_path, 'dir')
                 disp('depth_noseg dir doesnt exists!');
-                return;
+                fprintf('make dir %s', des_depth_path);
+                mkdir(des_depth_path);
             end
 
             original_depth = imread(source_depth_path);
@@ -61,6 +63,8 @@ function write_results(Hin_structs)
 
             if ~exist(des_pose_path, 'dir')
                 disp('poses dir doesnt exists!');
+                fprintf('make dir %s', des_pose_path);
+                mkdir(des_pose_path);
             end
             dlmwrite(fullfile(des_pose_path, pose_filename), source_pose, 'delimiter', '\t');
 

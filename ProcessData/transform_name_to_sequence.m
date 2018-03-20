@@ -52,4 +52,4 @@ function kv2_sequence_names = transform_name_to_kv2_sequence(names)
             kv2_sequence_names{i} = fullfile(kv2_kinect2data_path, middel_part);
         end
     end
-endtransform_name_to_kv2_sequence
+end
